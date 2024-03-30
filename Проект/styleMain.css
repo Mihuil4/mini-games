@@ -1,0 +1,13 @@
+html {
+ background-color: black;
+}
+#main{
+	height: 30px;
+}
+#find{
+	height: 30px;
+}
+input{
+	color: white;
+	background-color: black;
+}
