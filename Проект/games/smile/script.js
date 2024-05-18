@@ -96,7 +96,7 @@ function cntdwn(){
 	if (timer==0){
 		clearInterval(intervalId);
 		document.removeEventListener('mousemove', mouseListener);
-		helloText.innerHTML="конец игры, результат: "+ score+ ". <br> нажмите enter.";
+		helloText.innerHTML="конец игры, результат: "+ score+ ". <br> нажмите enter чтобы продолжить играть.<br> нажмите esc чтобы вернуться в меню";
 		helloText.style.display = 'block';
 		pig.style.display = 'none';
 		orange.style.display = 'none';
