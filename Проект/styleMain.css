@@ -1,0 +1,48 @@
+html {
+ background-color: black;
+}
+#main{
+	height: 30px;
+}
+#find{
+	height: 30px;
+}
+input{
+	color: white;
+	background-color: black;
+	width: 250px;
+}
+
+.handjet{
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+/*.header {
+	background-image: url(img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 10px;
+}
+
+.menu {
+	margin-top: 8px;
+}
+
+.menu_item {
+	margin: 0 57px;
+}*/
