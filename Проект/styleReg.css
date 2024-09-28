@@ -1,0 +1,19 @@
+body{
+    background-image: linear-gradient(to right, black,white,black);
+}
+.feedback {
+    font-size: 30px;
+    margin-top: 14%;
+	color: black;
+	text-align: center;
+}
+#submit{
+margin-top: 3%;
+}
+input{
+    font-size: 20px;
+}
+.a {
+	text-decoration: none;
+    
+}
