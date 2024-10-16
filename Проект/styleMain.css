@@ -1,3 +1,4 @@
+/* меню */
 html {
  background-color: black;
 }
@@ -10,4 +11,19 @@ html {
 input{
 	color: white;
 	background-color: black;
+}
+.row{
+	padding-top: 1%;
+}
+
+/* шапка */
+header{
+	background-image: url("../проект/img/smile.png");
+	background-size: cover;
+}
+.overlay{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	background: rgba(220, 220, 220, 0.5);
 }
