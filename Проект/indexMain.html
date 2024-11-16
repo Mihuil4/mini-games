@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  	/>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>mini games</title>
-	<link rel="stylesheet" type="text/css" href="styleMain.css">
+	<link rel="stylesheet" type="text/css" href="../style/styleMain.css">
+	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black">
-	<nav class="navbar navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">
-			<img id="main" src="img/main.png">
-			Mini games
-		</a>
-		<div>
-			<ul class="navbar-nav mr-auto text-white">
-				<li class="nav-item dropdown">
-				<input type="text">
-				<button class="bg-dark"><img id="find" src="img/find.png"></button>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<header>
-		<div class="overlay"></div>
-		<div class="container">
-
-		</div>
-	</header>
-
+<body>
+	<section class="interesting">
+		<nav class="navbar navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">
+				<img id="main" src="img/main.png">
+				Mini games
+			</a>
+			<div>
+				<ul class="navbar-nav mr-auto text-white">
+					<li class="nav-item dropdown">
+						<input type="text" id="search-bar">
+						<button class="bg-dark" onclick="()=>{f()}"><img id="find" src="img/find.png"></button>
+					</li>
+				</ul>
+				<button class="bg-black"><a href="../Проект/indexReg.html">игры</a></button>
+			</div>
+		</nav>
 	<div class="container-fluid bg-black">
 		<div class="row">
-			<div class="col-sm-3">
-				<a href="games/lines/index.html">
-					<div class="card bg-danger">
-						<div class="card-header">полоски</div>
+			<div class="col-sm">
+
+			</div>
+			<div class="col-sm">
+				
+			</div>
+			<div class="col-sm">
+				<!-- <img src=a> -->
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row" id="games-container">
+			<div  id="lines" class="col-sm-4">
+				<a class="a" href="games/lines/index.html">
+					<div class="card bg red">
+						<div class="card-header"><h1>полоски</h1></div>
 						<div class="card-body">
 							<img class="card-img-top" id="lines" src="img/lines.png">
-							<div class="card-text">игра на двоих человек<br> выиграет тот кто быстрее нажимает! <br> управление:
+							<div class="card-text"><h3>игра на двоих человек выиграет тот кто быстрее нажимает! управление:<h3>
 							</div>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="col-sm-3">
-				<a href="games/smile/index.html">
-					<div class="card bg-warning">
-						<div class="card-header">смайл</div>
+			<div id="smile" class="col-sm-4">
+				<a class="a" href="games/smile/index.html">
+					<div class="card bg yellow">
+						<div class="card-header"><h1>смайл</h1></div>
 						<div class="card-body">
 							<img class="card-img-top" id="smile" src="img/smile.png">
-							<div class="card-text">игра на одного человека<br>нужно как можно быстрее и точнее наводить мышь на листочки<br> управление:водить мышью
+							<div class="card-text"><h3>игра на одного человека нужно как можно быстрее и точнее наводить мышь на листочки управление:водить мышью</h3>
 							</div>
 						</div>
 					</div>
@@ -60,8 +77,33 @@
 			</div>
 		</div>
 	</div>
-
-	<script type="text/javascript" src="scriptMain.js"></script>
-	<script type="text/javascript" src="header.js"></script>
+	
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="footer-info">
+						Mihail O.
+						<br>
+						2024
+						<br>
+						<svg id="telegram" xmlns="hhtp://www.w3.org/2000/svg"
+						viewBox="0 0 496 512">
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		function f() {
+			console.log
+		}
+		$( "search-bar" ).on( "click", function( event ) {
+		$("#games-container").hide();
+		});
+	</script>
+	<script type="text/javascript" src="../scripts/scriptMain.js"></script>
 </body>
 </html>
