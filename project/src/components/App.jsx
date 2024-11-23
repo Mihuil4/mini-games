@@ -2,6 +2,9 @@ import { Interesting } from "./partial views/Interesting";
 import { Header } from "./partial views/Header";
 import { Footer } from "./partial views/footer";
 import { Carousel, Slide } from "./Carousel";
+import lines from "../images/lines.png"
+import smile from "../images/smile.png"
+import styles from './App.module.css';
 
 export const App = ()=>{
   return (
@@ -14,12 +17,10 @@ export const App = ()=>{
       }
       <Carousel >
         <Slide orderLevel={1}>
-          <h1>test</h1>
-          <br />
-          <h1>test123</h1>
+          <img className={styles.slide} src={lines}/>
         </Slide>
         <Slide orderLevel={2}>
-          <h2>test2</h2>
+          <img className={styles.slide} src={smile}/>
         </Slide>
       </Carousel>
     </div>

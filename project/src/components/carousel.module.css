@@ -1,0 +1,24 @@
+.carousel {
+    position: relative;
+    
+}
+.carousel button{
+    position: absolute;
+    height: 100%;
+    width: 5%;
+    border: none;
+    opacity: 0;
+    background-color: gray;
+    z-index: 10;
+
+}
+.carousel > button:hover{
+    opacity: 1;
+}
+
+.next_btn{
+    left: 1;
+}
+.back_btn{
+    right: 0px;
+}

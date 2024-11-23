@@ -1,5 +1,3 @@
-import lines from '../../images/lines.png'
-import smile from '../../images/smile.png'
 import interestingStyle from "./interestingStyle.css"
 export const Interesting = ()=>{
     return(
@@ -65,32 +63,6 @@ export const Interesting = ()=>{
                                 <p className="interesting-text">игры</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div row>
-                    <div id="carousel" className="carousel slide" data-bs-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <div className="container" id="first-slide">
-                                    <img src={lines} className="w-100"></img>
-                                </div>
-                            </div>
-                            <div className="carousel-item">
-                                <div className="container" id="second-slide">
-                                    <div className="description text-center">
-                                        <img src={smile} className='w-100'></img>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button className="carousel-control-prev carousel-control" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next carousel-control" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
