@@ -10,10 +10,9 @@ export const App = ()=>{
   return (
     <div className="main">
       {
-      /*<Header />
+      <><Header />
       <Interesting />
-      <Footer />
-      */
+      </>
       }
       <Carousel >
         <Slide orderLevel={1}>
@@ -23,6 +22,9 @@ export const App = ()=>{
           <img className={styles.slide} src={smile}/>
         </Slide>
       </Carousel>
+      {
+        <Footer />
+      }
     </div>
   );
 }

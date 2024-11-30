@@ -24,7 +24,7 @@ export const Carousel = ({children})=>{
     }
     return (
         <div className={styles.carousel}>
-            <button className={styles.back_btn} onClick={()=>{handleClickBack()}}>Back</button>
+            <button className={styles.back_btn} onClick={()=>{handleClickBack()}}>back</button>
             <button className={styles.next_btn} onClick={()=>{handleClickNext()}}>next</button>
             {children.map((slide)=>(
                 slide.props.orderLevel === slideNum && <div key={slide.props.orderLevel} className={styles.content}>{slide.props.children}</div>
