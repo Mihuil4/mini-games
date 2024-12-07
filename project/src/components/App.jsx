@@ -16,15 +16,14 @@ export const App = ()=>{
       }
       <Carousel >
         <Slide orderLevel={1}>
-          <img className={styles.slide} src={lines}/>
+          <img src={lines}/>
         </Slide>
         <Slide orderLevel={2}>
-          <img className={styles.slide} src={smile}/>
+          <img src={smile}/>
         </Slide>
       </Carousel>
-      {
-        <Footer />
-      }
+      <Footer />
+      
     </div>
   );
 }

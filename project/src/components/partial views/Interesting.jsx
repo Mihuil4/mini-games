@@ -4,7 +4,7 @@ export const Interesting = ()=>{
             <div className="container-fluid">
                 <div className="row">
                     <div className="description text-center col-sm-12">
-                        <div className="overlay"><h3>Добро пожаловать на мой сайт с мини играми</h3></div>
+                        <div className="overlay">Добро пожаловать на мой сайт с мини играми</div>
                     </div>
                 </div>
                 <div className="row">
