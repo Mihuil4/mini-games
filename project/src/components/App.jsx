@@ -5,15 +5,18 @@ import { Carousel, Slide } from "./Carousel";
 import lines from "../images/lines.png"
 import smile from "../images/smile.png"
 import styles from './App.module.css';
+import { useState } from "react";
 
 export const App = ()=>{
+  const [isClicked, setIsClicked] = useState(false);
+  const handleClick = ()=>{
+    setIsClicked(!isClicked);
+  }
+  
   return (
     <div className="main">
-      {
-      <><Header />
-      <Interesting />
-      </>
-      }
+      <Header onGameClick={()=>{handleClick()}}/>
+      {isClicked && <><Interesting />
       <Carousel >
         <Slide orderLevel={1}>
           <img src={lines}/>
@@ -21,7 +24,7 @@ export const App = ()=>{
         <Slide orderLevel={2}>
           <img src={smile}/>
         </Slide>
-      </Carousel>
+      </Carousel></>}
       <Footer />
       
     </div>
