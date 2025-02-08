@@ -1,5 +1,4 @@
-document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeEnd',
-	'<div class="text" id="helloText">Нажмите enter</div>');
+document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeEnd','<div class="text" id="helloText">Нажмите enter</div>');
 var helloText = document.getElementById('helloText');
 helloText.style.display = 'block';
 helloText.style.textAlign = 'center';

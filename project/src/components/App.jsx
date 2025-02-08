@@ -3,7 +3,6 @@ import { Header } from "./partial views/Header";
 import { Footer } from "./partial views/footer";
 import { Carousel, Slide } from "./Carousel";
 import lines from "../images/lines.png"
-import smile from "../images/smile.png"
 import styles from './App.module.css';
 import { useState } from "react";
 
