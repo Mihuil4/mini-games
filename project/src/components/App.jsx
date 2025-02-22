@@ -3,7 +3,8 @@ import { Header } from "./partial views/Header";
 import { Footer } from "./partial views/footer";
 import { Carousel, Slide } from "./Carousel";
 import lines from "../images/lines.png"
-import styles from './App.module.css';
+import styles from "./App.module.css";
+import Smile from "./partial views/smile"
 import { useState } from "react";
 
 export const App = ()=>{
@@ -15,6 +16,7 @@ export const App = ()=>{
   return (
     <div className="main">
       <Header onGameClick={()=>{handleClick()}}/>
+      <Smile/>
       {isClicked && <><Interesting />
       <Carousel >
         <Slide orderLevel={1}>

@@ -1,15 +1,13 @@
 import smileStyle from "./smileStyle.css"
 import smile from "../../images/smile.png"
-export const smile = () => {
+const Smile = () => {
     var mouseListener = function(event){mouseMoveFunc(event)};
     document.addEventListener("mousemove", mouseListener);
     function mouseMoveFunc(event){
-	checkCollision();
     }
     function mouseMoveFunc(event){
         pig.style.left=event.clientX - 380 + 'px' ;//380
         pig.style.top=event.clientY - 240 + 'px' ;//240
-        checkCollision();
     }
     return(
         <div className="container">
@@ -18,3 +16,4 @@ export const smile = () => {
         </div>
     )
 }
+export default Smile;
