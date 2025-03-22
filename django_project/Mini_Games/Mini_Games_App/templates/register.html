@@ -1,0 +1,8 @@
+{% load static %}
+<div class="feedback-form">
+    {% csrf_token %}
+    <input name="email" class="form-control" id="email" type="email" placeholder="enter email">
+    <button  id="submit-button" class="form-control">Send</button>
+</div>
+<script type="text/javascript" src="{% static 'libraries/jquery.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/send.js'%}"></script>

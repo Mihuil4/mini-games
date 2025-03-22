@@ -1,0 +1,33 @@
+.carousel {
+    position: relative;
+    text-align: center;
+    max-height:60vh;
+    overflow: hidden;
+    }
+.carousel button{
+    position: absolute;
+    height: 100%;
+    width: 5%;
+    border: none;
+    opacity: 0;
+    background-color: black;
+    z-index: 10;
+    color: white;
+}
+.carousel > button:hover{
+    opacity: 0.5;
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+.content img{
+    height: 50%;
+    width: 50%;
+}
+.next_btn{
+    right: 25%;
+}
+.back_btn{
+    left:25%;
+}

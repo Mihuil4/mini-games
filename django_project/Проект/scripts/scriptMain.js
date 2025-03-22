@@ -1,0 +1,1 @@
+let input = $('#search-bar').value;
