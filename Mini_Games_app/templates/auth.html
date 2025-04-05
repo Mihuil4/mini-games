@@ -1,0 +1,15 @@
+<main class="container">
+    <form action="{% url 'auth' %}" method="POST">
+        {% csrf_token %}
+        <label for="login" class="form-label">
+            логин
+        </label>
+        <input class="form-control w-25 mb-3" id="login" name="login">
+        <label for="password" class="form-label">
+            пароль
+        </label>
+        <input class="form-control w-25 mb-3" id="password" name="password">
+        <button class="btn btn-primary">Войти</button>
+        
+    </form>
+</main>

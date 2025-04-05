@@ -1,0 +1,9 @@
+#hello_text{
+    display: block;
+    text-align: center;
+    font-size: 72pt;
+}
+#pig{
+    position: fixed;
+    display:none ;
+}
