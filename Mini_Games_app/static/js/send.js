@@ -1,4 +1,6 @@
 $('#submit-button').click(function() {
+    const username = $('#username').val();
+    const password = $('#password').val();
     const email = $("#email").val();
     const csrf = $('[name=csrf=csrfmiddlewaretoken]').val();
     const submitButton = $(this);
