@@ -5,8 +5,8 @@ import { Carousel, Slide } from "./Carousel";
 import lines from "./images/lines.png";
 // import Smile from "./partial views/smile"
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -25,11 +25,10 @@ function App() {
           <img src={lines}/>
         </Slide>
         <Slide orderLevel={2}>
-          <img src="#" alt="smile"/>
+          <img src={lines}/>
         </Slide>
       </Carousel></>}
       <Footer />
-      
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import interestingStyle from "./interestingStyle.css"
+import "./interestingStyle.css"
 export const Interesting = ()=>{
     return(
             <div className="container-fluid">
@@ -66,7 +66,7 @@ export const Interesting = ()=>{
                     </div>
                 </div>
                 {/* <form action="" method="POST">
-                    <input type="email" className="form-control" name="mail" id="email" placeholder="Введите адрес почты"></input>
+                    <input type="email" className="form-control" name="email" id="email" placeholder="Введите адрес почты"></input>
                     <input type=""></input>
                 </form> */}
             </div>

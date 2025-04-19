@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'Mini_Games_App.apps.MiniGamesAppConfig',
+    'Mini_Games_app.apps.MiniGamesAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/dist/assets'),
+    os.path.join(BASE_DIR, 'frontend/dist/assets')
 ]
 
 # Default primary key field type

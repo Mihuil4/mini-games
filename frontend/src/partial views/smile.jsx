@@ -1,4 +1,4 @@
-import smileStyle from "./smileStyle.css"
+import "./smileStyle.css"
 import smile from "../images/smile.png"
 const Smile = () => {
     var mouseListener = function(event){mouseMoveFunc(event)};
