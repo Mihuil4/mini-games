@@ -1,5 +1,5 @@
 import '../partial views/headerStyle.css';
-import img from '../images/main.png'
+import img from '../images/smile.png'
 export const Header = ({onGameClick})=>{
     return (
         <header>
