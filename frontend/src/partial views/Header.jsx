@@ -1,11 +1,10 @@
 import '../partial views/headerStyle.css';
-import img from '../images/smile.png'
-export const Header = ({onGameClick})=>{
+export const Header = ({ src, onGameClick})=>{
     return (
         <header>
             <div className="menu">
                 <nav className="navbar bg-dark">
-                    <img id="logo" src={img} alt='err'/>
+                    <img id="logo" src={src} alt='err'/>
                     Mini Games
                     <button className="btn btn-outline-light light" onClick={()=>{onGameClick()}}>игры</button>
                     <div>

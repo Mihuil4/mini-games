@@ -3,6 +3,7 @@ import { Header } from "./partial views/Header";
 import { Footer } from "./partial views/footer";
 import { Carousel, Slide } from "./Carousel";
 import lines from "./images/lines.png";
+import main from '../public/main.png';
 // import Smile from "./partial views/smile"
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
@@ -17,7 +18,7 @@ function App() {
   
   return (
     <div className="main">
-      <Header onGameClick={()=>{handleClick()}}/>
+      <Header src={'./main.png'} onGameClick={()=>{handleClick()}}/>
       {/* <Smile/> */}
       {isClicked && <><Interesting />
       <Carousel >

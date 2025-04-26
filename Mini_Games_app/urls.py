@@ -1,9 +1,9 @@
 from django.urls import path
-from django.views.generic import TemplateView
+from django.views.generic import RedirectView
 from . import views
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='index.html')),
+    path('', RedirectView.as_view(url='/static/index.html')),
     path('index/', views.index, name="index"),
     path('auth/', views.auth, name="auth"),
     path('feedback/', views.feedback, name="feedback"),

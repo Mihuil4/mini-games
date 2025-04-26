@@ -16,10 +16,10 @@ def auth(request):
         user = authenticate(request, username = username, password = password)
         if user is not None:
             login(request, user)
-            return render(request, 'Mini_Games/auth.html')
+            return render(request, 'auth.html')
         else:
-            return render(request, 'Mini_Games/auth.html', {'error': 'неверные логин и пароль'})
-    return render(request, 'Mini_Games/auth.html')
+            return render(request, 'auth.html', {'error': 'неверные логин и пароль'})
+    return render(request, 'auth.html')
 
 def reg(request):
     if request.method == 'POST':
