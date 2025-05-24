@@ -1,22 +1,22 @@
-$('#submit-button').click(function() {
-    const username = $('#username').val();
+$('#auth-button').click(function() {
+    const login = $('#login').val();
     const password = $('#password').val();
-    const email = $("#email").val();
     const csrf = $('[name=csrf=csrfmiddlewaretoken]').val();
-    const submitButton = $(this);
-
-    if(!email) {
+    const authButton = $(this)
+    if(!login) {
         alert('введите email');
         return;
     }
     if(!password) {
-        
+        alert('введите пароль');
+        return;
     }
     $.ajax({
         url: '/feedback/',
         type:'POST',
         data:{
-            'email':email,
+            'login':login,
+            'password':password,
             'csrfmiddlewaretoken': csrf
         },
         dataType: 'json',
@@ -39,4 +39,10 @@ $('#submit-button').click(function() {
             });
         }
     })
+});
+$('#reg-button').click(function(){
+    const login = $('#login').val();
+    const password = $('#password').val();
+    const email = $('#email').val();
+    const csrf = $('[name=csrfmiddlewaretoken]').val();
 });

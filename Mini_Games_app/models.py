@@ -1,6 +1,7 @@
 from django.db import models
 
 class User(models.Model):
+    login = models.CharField(max_length=200)
     email = models.CharField(max_length=200)
     # password = 
     send_date = models.DateTimeField('Email sent')

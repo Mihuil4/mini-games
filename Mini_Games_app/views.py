@@ -18,7 +18,7 @@ def auth(request):
             login(request, user)
             return render(request, 'auth.html')
         else:
-            return render(request, 'auth.html', {'error': 'неверные логин и пароль'})
+            JsonResponse({'status':'error','message':'Неверный логин или пароль'})
     return render(request, 'auth.html')
 
 def reg(request):
@@ -29,6 +29,8 @@ def reg(request):
         user = User.objects.create_user(username,email,password)
         user.save()
         login(request,user)
+        return render(request, 'reg.html')
+    return render(request, 'reg.html')
 
 def feedback(request):
     if request.method == 'POST':

@@ -15,7 +15,7 @@ function App() {
   const handleClick = ()=>{
     setIsClicked(!isClicked);
   }
-  
+
   return (
     <div className="main">
       <Header src={'./main.png'} onGameClick={()=>{handleClick()}}/>
